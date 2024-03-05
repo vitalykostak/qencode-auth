@@ -1,5 +1,7 @@
 ### Launch project
 
+node - v20.11.0
+
 -   `npm install` - Install project dependencies.
 -   `npm run start:dev` - Start the project in the development environment using webpack.
 
