@@ -108,6 +108,7 @@ const LoginForm: FC<LoginFormProps> = memo((props) => {
                         type="submit"
                         className={styles.buttonContainer}
                         disabled={isSubmitting || !isValid}
+                        loading={isSubmitting}
                     >
                         Log in to Qencode
                     </Button>

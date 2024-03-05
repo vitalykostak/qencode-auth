@@ -116,6 +116,7 @@ const ResetPasswordForm: FC<ResetPasswordFormProps> = memo((props) => {
                         type="submit"
                         className={styles.buttonContainer}
                         disabled={isSubmitting || !isValid}
+                        loading={isSubmitting}
                     >
                         Reset Password
                     </Button>

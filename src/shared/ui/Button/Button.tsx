@@ -12,13 +12,15 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     variant?: ButtonVariant
     radius?: ButtonRadius
     block?: boolean
+    loading?: boolean
 }
 
 const Button: FC<ButtonProps> = (props) => {
-    const { className, children, variant = 'primary', block = true, ...other } = props
+    const { className, children, variant = 'primary', block = true, loading, ...other } = props
 
     const mods = {
-        [styles.block]: block
+        [styles.block]: block,
+        [styles.loading]: loading
     }
 
     const additionsClasses = [className, styles[variant]]

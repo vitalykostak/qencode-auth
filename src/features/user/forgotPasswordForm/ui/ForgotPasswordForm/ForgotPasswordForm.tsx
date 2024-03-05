@@ -86,6 +86,7 @@ const ForgotPasswordForm: FC<ForgotPasswordFormProps> = memo((props) => {
                             onClick={() => {
                                 resetForm()
                             }}
+                            loading={isSubmitting}
                         >
                             Cancel
                         </Button>
