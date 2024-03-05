@@ -1,0 +1,39 @@
+.Button {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    padding: 1.4rem;
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+
+    &:hover:not(:disabled) {
+        cursor: pointer;
+    }
+
+    &:active:not(:disabled) {
+        transform: scale(0.99);
+    }
+}
+
+.primary {
+    background-color: var(--primary-color);
+    font-size: 1.6rem;
+    color: var(--background-color);
+    font-family: var(--serif-font-bold);
+    border-radius: var(--border-radius-medium);
+}
+
+.outline {
+    background-color: var(--background-color);
+    font-size: 1.4rem;
+    font-family: var(--serif-font-medium);
+    color: var(--text-color);
+    border: 1px solid var(--neutral-color);
+    border-radius: var(--border-radius-small);
+}
+
+.block {
+    width: 100%;
+}

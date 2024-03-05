@@ -1,0 +1,28 @@
+.LoginForm {
+    width: 100%;
+
+    .fieldsContainer {
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        row-gap: 2.5rem;
+    }
+
+    .passwordRecoveryActionContainer {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+
+    .buttonContainer {
+        margin-top: 3.2rem;
+    }
+
+    .signUpActionContainer {
+        margin-top: 2rem;
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+    }
+}

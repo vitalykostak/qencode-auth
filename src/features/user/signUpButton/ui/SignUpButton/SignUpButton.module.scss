@@ -1,0 +1,9 @@
+.SignUpButton {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

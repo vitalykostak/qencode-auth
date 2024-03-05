@@ -1,0 +1,29 @@
+.TextLineDivider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-family: var(--serif-font-medium);
+    line-height: 1.2rem;
+    font-size: 1.2rem;
+    color: var(--neutral-color);
+    text-transform: uppercase;
+
+    &:before {
+        content: '';
+        margin-right: 0.8rem;
+        display: flex;
+        flex-grow: 1;
+        height: 1px;
+        background-color: var(--neutral-color);
+    }
+
+    &:after {
+        content: '';
+        display: flex;
+        flex-grow: 1;
+        height: 1px;
+        background-color: var(--neutral-color);
+        margin-left: 0.8rem;
+    }
+}
